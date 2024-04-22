@@ -199,7 +199,7 @@
 			<script src="./Tatenda Chipondoro Portfolio by HTML5 UP_files/browser.min.js.download"></script>
 			<script src="./Tatenda Chipondoro Portfolio by HTML5 UP_files/breakpoints.min.js.download"></script>
 			<script src="./Tatenda Chipondoro Portfolio by HTML5 UP_files/util.js.download"></script>
-			<script src="./Tatenda Chipondoro Portfolio by HTML5 UP_files/main.js.download"></script><div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 2385.58);"></div><a href="http://127.0.0.1:5500/Tatenda%20Chipondoro%20Portfolio%20by%20HTML5%20UP.html#navPanel" id="navPanelToggle" class="alt">Menu</a><div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 3449.33);"></div><a href="http://127.0.0.1:5500/index.html#navPanel" id="navPanelToggle" class="alt">Menu</a>
+			<script src="./Tatenda Chipondoro Portfolio by HTML5 UP_files/main.js.download"></script><div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 3206.05);"></div><a href="http://127.0.0.1:5500/Tatenda%20Chipondoro%20Portfolio%20by%20HTML5%20UP.html#navPanel" id="navPanelToggle" class="alt">Menu</a><div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 2385.58);"></div><a href="http://127.0.0.1:5500/Tatenda%20Chipondoro%20Portfolio%20by%20HTML5%20UP.html#navPanel" id="navPanelToggle" class="alt">Menu</a><div class="bg" style="transform: matrix(1, 0, 0, 1, 0, 3449.33);"></div><a href="http://127.0.0.1:5500/index.html#navPanel" id="navPanelToggle" class="alt">Menu</a>
 
 	<!-- Code injected by live-server -->
 <script>
@@ -240,7 +240,45 @@
 	// ]]>
 </script>
 
-</div><div id="navPanel"><nav></nav><a href="http://127.0.0.1:5500/Tatenda%20Chipondoro%20Portfolio%20by%20HTML5%20UP.html#navPanel" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a></div><div id="navPanel"><nav></nav><a href="http://127.0.0.1:5500/index.html#navPanel" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a></div><!-- Code injected by live-server -->
+</div><div id="navPanel"><nav></nav><a href="http://127.0.0.1:5500/Tatenda%20Chipondoro%20Portfolio%20by%20HTML5%20UP.html#navPanel" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a></div><div id="navPanel"><nav></nav><a href="http://127.0.0.1:5500/Tatenda%20Chipondoro%20Portfolio%20by%20HTML5%20UP.html#navPanel" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a></div><div id="navPanel"><nav></nav><a href="http://127.0.0.1:5500/index.html#navPanel" class="close" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></a></div><!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
 	if ('WebSocket' in window) {
